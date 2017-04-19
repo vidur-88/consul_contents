@@ -14,13 +14,13 @@ Consul-contents is available via pypi and can be installed with pip:
 Description
 -----------
 
-Consul-contents get default as a root directory and give data inside default in dict format.
-If you want to change any value inside default directory server to server. You just need to
-set ENV in your server os that is CONSUL_ENV_NAME='xxxxx'.
+Consul-contents read **default** as a root directory from consul.
+If you want to change any data inside **default** directory server to server or want to specific
+root directory on consul. You just need to set a env variable on your system that is CONSUL_ENV_NAME='xxxxx'.
 
-Consul-content first read data from default directory and then CONSUL_ENV_NAME directory
-from consul. If new data in CONSUL_ENV_NAME then it will add in resultant dict (default dir data)
-otherwise overwrite on existing default data.
+Consul-content first read data from **default** directory and make a resultant dict.
+Then it reads **CONSUL_ENV_NAME** directory from consul and modify the resultant dict which we
+got after reading **default** directory
 
 Example with consul snapshots:
 
