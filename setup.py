@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='consul-contents',
-      version='0.1.0',
+      version='1.0.0',
       description='This is for loading key-value stored on consul server',
       url='https://github.com/vidur-88/consul_contents.git',
       author='vikash gupta',
