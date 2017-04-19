@@ -90,3 +90,6 @@ ENV/
 
 # Auth file
 .pypirc
+
+# others files
+sample.json
